@@ -55,7 +55,9 @@ app.put('/books/:id', (req, res) => {
         }
     );
 });
-
+app.get("/", (req, res) => {
+  res.send(" Library Managemnet system Backend is running successfully 🚀");
+});
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
